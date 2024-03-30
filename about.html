@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body bgcolor="violet">
+    <nav>
+        <ul class="space-between">
+            <li><div class="logo">
+                <p>RSRD</p>
+            </div></li>
+            <li><a href="form.html">SIGN IN</a></li>
+           
+            <li><a href="landing.html">home</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="back-button">
+       <a href="landing.html"><img src="back1.jpg" alt=""></a> 
+    </div>
+    
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="g3.jpg" style="width:100%">
+  <div class="text">RSRD</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="g4.jpg" style="width:100%">
+  <div class="text">RSRD</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="g1.jpg" style="width:100%">
+  <div class="text">RSRD</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+  // Change image every 2 seconds
+}
+</script>
+<div class="profile">
+    <div class="text-below-image"> 
+        <img src="elmos.png" alt="">
+        <p>RIRARIS SUN</p>
+        <p>DC2022MCA0018</p>
+
+    </div>
+    <div class="text-below-image"> 
+        <img src="elmos.png" alt="">
+        <p>SPERO MELIO SUCHIANG</p>
+        <p>DC2022MCA0024</p>
+
+    </div>
+    <div class="text-below-image"> 
+        <img src="elmos.png" alt="">
+        <p>DAPBIANG JALONG</p>
+        <p>DC2022MCA0005</p>
+
+    </div>
+    <div class="text-below-image"> 
+        <img src="elmos.png" alt="">
+        <p>RIDASHISHA NONGBRI</p>
+        <p>DC2022MCA0051</p>
+
+    </div>
+   
+  
+
+
+</div>
+<footer>
+    <div class="footer-content">
+        <h3>mission for successs</h3>
+        <p>
+            Because every child is capable and deserving of reaching her 
+        or his full potential. Our mission is to provide tools and 
+        resources that empowers both educators and children to experience
+         learning through creative expression,
+       
+       <b>RSDR </b> empowers the teachers to instil the correct
+         kind of learning among the young minds. With a thematic
+          and integrated learning approach honed with the best 
+          pedagogies for the young ones, <b>RSDR</b> helps pre-schoolers
+          assimilate different values and life skills that are 
+          imperative for their holistic development.
+    
+        </p>
+        <ul class="social">
+            <h4>Contact Us</h4>
+            <li><img src="e.jpg" alt=""></li>
+            <li><img src="facebook.jpg" alt=""></li>
+            <li><img src="twitter.jpg" alt=""></li>
+    
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright 2022 RSDR.</p>
+    </div>
+    </footer>
+
+</body>
+</html> 
